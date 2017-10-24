@@ -1,5 +1,7 @@
 # color-normalize [![Build Status](https://travis-ci.org/colorjs/color-normalize.png)](https://travis-ci.org/colorjs/color-normalize)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/colorjs/color-normalize.svg)](https://greenkeeper.io/)
+
 Convert any color argument (string, color, number, object etc.) to an array with channels data of desired output format. [dtype](https://npmjs.org/package/dtype) is used for output format.
 
 ## Usage
