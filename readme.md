@@ -1,8 +1,6 @@
-# color-normalize [![Build Status](https://travis-ci.org/colorjs/color-normalize.png)](https://travis-ci.org/colorjs/color-normalize)
+# color-normalize [![Build Status](https://travis-ci.org/colorjs/color-normalize.png)](https://travis-ci.org/colorjs/color-normalize) [![Greenkeeper badge](https://badges.greenkeeper.io/colorjs/color-normalize.svg)](https://greenkeeper.io/)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/colorjs/color-normalize.svg)](https://greenkeeper.io/)
-
-Convert any color argument (string, color, number, object etc.) to an array with channels data of desired output format. [dtype](https://npmjs.org/package/dtype) is used for output format.
+Convert any color argument (string, color, number, object etc.) to an array with channels data of desired output format.
 
 ## Usage
 
@@ -19,6 +17,8 @@ rgba(new Float32Array([0, 0.25, 0, 1]), 'uint8_clamped') // Uint8ClampedArray<[0
 rgba(new Uint8Array([0, 72, 0, 255]), 'array') // [0, 0.2823529411764706, 0, 1]
 ```
 
+Output format can be any [dtype](https://npmjs.org/package/dtype): `uint8`, `uint8_clamped`, `array`, `float32`, `float64` etc.
+
 ## Related
 
 * [color-alpha](https://github.com/dfcreative/color-alpha) − change alpha of a color string.
@@ -29,4 +29,4 @@ rgba(new Uint8Array([0, 72, 0, 255]), 'array') // [0, 0.2823529411764706, 0, 1]
 
 ## License
 
-MIT.
+(c) 2017 Dima Yv. MIT License
