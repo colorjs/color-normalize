@@ -1,0 +1,32 @@
+{
+  "name": "color-normalize",
+  "version": "1.0.0",
+  "description": "Convert color string or any other input to sanitized output format",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colorjs/color-normalize.git"
+  },
+  "keywords": [
+    "color",
+    "colorjs",
+    "rgb",
+    "rgba",
+    "color-space",
+    "css"
+  ],
+  "author": "ΔY <dfcreative@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colorjs/color-normalize/issues"
+  },
+  "homepage": "https://github.com/colorjs/color-normalize#readme",
+  "dependencies": {
+    "clamp": "^1.0.1",
+    "color-rgba": "^2.0.0",
+    "dtype": "^2.0.0"
+  }
+}
