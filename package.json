@@ -1,7 +1,7 @@
 {
   "name": "color-normalize",
   "version": "1.0.0",
-  "description": "Convert color string or any other input to sanitized output format",
+  "description": "Convert any color data to sanitized output format",
   "main": "index.js",
   "scripts": {
     "test": "node test"

@@ -27,4 +27,4 @@ rgba(new Uint8Array([0, 72, 0, 255]), 'array') // [0, 0.2823529411764706, 0, 1]
 
 ## License
 
-MIT.
+(c) 2017 Dima Yv. MIT License
