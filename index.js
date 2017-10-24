@@ -7,13 +7,20 @@ var clamp = require('clamp')
 var dtype = require('dtype')
 
 module.exports = function normalize (color, type) {
-	if (type === 'float' || !type) type = 'array';
-	if (type === 'uint') type = 'uint8';
-	if (type === 'uint_clamped') type = 'uint8_clamped';
+	if (type === 'float' || !type) type = 'array'
+	if (type === 'uint') type = 'uint8'
+	if (type === 'uint_clamped') type = 'uint8_clamped'
 
-	var normalize = type !== 'uint8' && type !== 'uint8_clamped';
+	var Ctor = dtype(type)
+	var output = new Ctor(4)
 
-	var output = type === 'array' ? Array(4) : new (dtype(type))(4);
+	//same class does not change values
+	if (color instanceof Ctor) {
+		output.set(color)
+		return
+	}
+
+	var normalize = type !== 'uint8' && type !== 'uint8_clamped'
 
 	//consider uint8 array as 0..255 channel values
 	if (color instanceof Uint8Array || color instanceof Uint8ClampedArray) {
