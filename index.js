@@ -10,14 +10,13 @@ module.exports = function normalize (color, type) {
 	if (type === 'float' || !type) type = 'array'
 	if (type === 'uint') type = 'uint8'
 	if (type === 'uint_clamped') type = 'uint8_clamped'
-
 	var Ctor = dtype(type)
 	var output = new Ctor(4)
 
 	//same class does not change values
 	if (color instanceof Ctor) {
 		output.set(color)
-		return
+		return output
 	}
 
 	var normalize = type !== 'uint8' && type !== 'uint8_clamped'
@@ -28,7 +27,6 @@ module.exports = function normalize (color, type) {
 		output[1] = color[1]
 		output[2] = color[2]
 		output[3] = color[3] != null ? color[3] : 255
-
 		if (normalize) {
 			output[0] /= 255
 			output[1] /= 255
