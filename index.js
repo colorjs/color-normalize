@@ -15,7 +15,12 @@ module.exports = function normalize (color, type) {
 
 	//same class does not change values
 	if (color instanceof Ctor) {
+		if (Array.isArray(color)) {
+			return color.slice()
+		}
+
 		output.set(color)
+
 		return output
 	}
 
