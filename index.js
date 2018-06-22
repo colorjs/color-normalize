@@ -1,4 +1,4 @@
-/** @module  color-rgba */
+/** @module  color-normalize */
 
 'use strict'
 

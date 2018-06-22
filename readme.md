@@ -21,10 +21,10 @@ Output format can be any [dtype](https://npmjs.org/package/dtype): `uint8`, `uin
 
 ## Related
 
-* [color-alpha](https://github.com/dfcreative/color-alpha) − change alpha of a color string.
-* [color-interpolate](https://github.com/dfcreative/color-interpolate) − interpolate by color palette.
-* [color-parse](https://github.com/dfcreative/color-parse) − comprehensive color string parser.
-* [color-rgba](https://github.com/dfcreative/color-rgba) − get rgba channel values from a string.
+* [color-alpha](https://github.com/colorjs/color-alpha) − change alpha of a color string.
+* [color-interpolate](https://github.com/colorjs/color-interpolate) − interpolate by color palette.
+* [color-parse](https://github.com/colorjs/color-parse) − comprehensive color string parser.
+* [color-rgba](https://github.com/colorjs/color-rgba) − get rgba channel values from a string.
 * [flatten-vertex-data](https://npmjs.org/package/flatten-vertex-data) − ensure sequence of point coordinates is flat.
 
 ## License

@@ -18,7 +18,7 @@
     "color-space",
     "css"
   ],
-  "author": "ΔY <dfcreative@gmail.com>",
+  "author": "Dmitry Yv <dfcreative@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/colorjs/color-normalize/issues"
@@ -26,7 +26,7 @@
   "homepage": "https://github.com/colorjs/color-normalize#readme",
   "dependencies": {
     "clamp": "^1.0.1",
-    "color-rgba": "^2.0.0",
+    "color-rgba": "^2.1.0",
     "dtype": "^2.0.0"
   }
 }

@@ -11,3 +11,4 @@ assert.deepEqual(rgba(new Uint8Array([0, 72, 0, 255]), 'array'), [0, 0.282352941
 assert.deepEqual(rgba(new Uint8Array([0, 72, 0, 255]), 'uint8'), [0, 72, 0, 255])
 
 assert.deepEqual(rgba([0,0,0,1]), [0,0,0,1])
+assert.deepEqual(rgba(0x00ff00), [0,1,0,1])
