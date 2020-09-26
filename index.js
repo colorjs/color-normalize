@@ -3,7 +3,6 @@
 'use strict'
 
 var rgba = require('color-rgba')
-var clamp = require('clamp')
 var dtype = require('dtype')
 
 module.exports = function normalize (color, type) {
@@ -43,10 +42,10 @@ module.exports = function normalize (color, type) {
 	}
 
 	if (!normalize) {
-		output[0] = clamp(Math.floor(color[0] * 255), 0, 255)
-		output[1] = clamp(Math.floor(color[1] * 255), 0, 255)
-		output[2] = clamp(Math.floor(color[2] * 255), 0, 255)
-		output[3] = color[3] == null ? 255 : clamp(Math.floor(color[3] * 255), 0, 255)
+		output[0] = Math.min(Math.max(Math.floor(color[0] * 255), 0), 255)
+		output[1] = Math.min(Math.max(Math.floor(color[1] * 255), 0), 255)
+		output[2] = Math.min(Math.max(Math.floor(color[2] * 255), 0), 255)
+		output[3] = color[3] == null ? 255 : Math.min(Math.max(Math.floor(color[3] * 255), 0), 255)
 	} else {
 		output[0] = color[0]
 		output[1] = color[1]
