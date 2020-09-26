@@ -1,4 +1,4 @@
-# color-normalize [![Build Status](https://travis-ci.org/colorjs/color-normalize.png)](https://travis-ci.org/colorjs/color-normalize) [![Greenkeeper badge](https://badges.greenkeeper.io/colorjs/color-normalize.svg)](https://greenkeeper.io/)
+# color-normalize [![Build Status](https://travis-ci.org/colorjs/color-normalize.png)](https://travis-ci.org/colorjs/color-normalize) [![size](https://img.shields.io/bundlephobia/minzip/color-normalize?label=size)](https://bundlephobia.com/result?p=color-normalize) ![stable](https://img.shields.io/badge/stability-stable-green)
 
 Convert any color argument (string, color, number, object etc.) to an array with channels data of desired output format.
 
