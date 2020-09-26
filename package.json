@@ -3,8 +3,13 @@
   "version": "1.5.0",
   "description": "Convert any color data to sanitized output format",
   "main": "index.js",
+  "module": "./index.mjs",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.js"
+  },
   "scripts": {
-    "test": "node test"
+    "test": "node test.mjs"
   },
   "repository": {
     "type": "git",
