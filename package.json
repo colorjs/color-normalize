@@ -1,6 +1,6 @@
 {
   "name": "color-normalize",
-  "version": "1.5.2",
+  "version": "2.0.0",
   "description": "Convert any color data to sanitized output format",
   "main": "index.js",
   "browser": "index.js",
