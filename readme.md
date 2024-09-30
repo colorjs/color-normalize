@@ -38,4 +38,4 @@ Output format can be any [dtype](https://npmjs.org/package/dtype): `uint8`, `uin
 
 ## License
 
-(c) 2017 Dima Yv. MIT License
+(c) 2017 Dmitry Iv. MIT License
