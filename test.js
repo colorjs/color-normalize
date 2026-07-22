@@ -34,3 +34,7 @@ assert.deepEqual(rgba([0, 0, 0]), [0, 0, 0, 1])
 assert.deepEqual(rgba([1, 1, 1]), [1, 1, 1, 1])
 assert.deepEqual(rgba([127.5, 127.5, 127.5]), [.5, .5, .5, 1])
 assert.deepEqual(rgba([255, 255, 255]), [1, 1, 1, 1])
+
+// modern css strings normalize via color-rgba (reference: colorjs.io red)
+assert.deepEqual(rgba('oklch(0.62796 0.25768 29.234)', 'uint8'), new Uint8Array([255, 0, 0, 255]))
+assert.deepEqual(rgba('color(display-p3 1 0 0)', 'uint8'), new Uint8Array([255, 0, 0, 255]))
