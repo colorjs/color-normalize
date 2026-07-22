@@ -1,28 +1,28 @@
-# color-normalize [![Build Status](https://travis-ci.org/colorjs/color-normalize.png)](https://travis-ci.org/colorjs/color-normalize) [![size](https://img.shields.io/bundlephobia/minzip/color-normalize?label=size)](https://bundlephobia.com/result?p=color-normalize) ![stable](https://img.shields.io/badge/stability-stable-green)
+# color-normalize [![test](https://github.com/colorjs/color-normalize/actions/workflows/test.js.yml/badge.svg)](https://github.com/colorjs/color-normalize/actions/workflows/test.js.yml) [![size](https://img.shields.io/bundlephobia/minzip/color-normalize?label=size)](https://bundlephobia.com/result?p=color-normalize) ![stable](https://img.shields.io/badge/stability-stable-green)
 
 Convert any color argument (string, color, number, object etc.) to an array with channels data of desired output format.
 
 
 ## Usage
 
-[![npm install color-normalize](https://nodei.co/npm/color-normalize.png?mini=true)](https://npmjs.org/package/color-normalize/)
+`$ npm install color-normalize`
 
 ```js
-const rgba = require('color-normalize')
+import rgba from 'color-normalize'
 
 rgba('red') // [1, 0, 0, 1]
 rgba('rgb(80, 120, 160)', 'uint8') // Uint8Array<[80, 120, 160, 255]>
 rgba('rgba(255, 255, 255, .5)', 'float64') // Float64Array<[1, 1, 1, .5]>
-rgba('hsla(109, 50%, 50%, .75)', 'uint8') // Uint8Array<[87, 191, 64, 191]>
-rgba(new Float32Array([0, 0.25, 0, 1]), 'uint8_clamped') // Uint8ClampedArray<[0, 64, 0, 255]>
+rgba('hsla(109, 50%, 50%, .75)', 'uint8') // Uint8Array<[87, 191, 63, 191]>
+rgba(new Float32Array([0, 0.25, 0, 1]), 'uint8_clamped') // Uint8ClampedArray<[0, 63, 0, 255]>
 rgba(new Uint8Array([0, 72, 0, 255]), 'array') // [0, 0.2823529411764706, 0, 1]
 
 // ambivalent input
-rgba([0,0,0]) // [0,0,0]
-rgba([.5,.5,.5]) // [.5,.5,.5]
-rgba([1,1,1]) // [1,1,1]
-rgba([127,127,127]) // [.5,.5,.5]
-rgba([255,255,255]) // [1,1,1]
+rgba([0,0,0]) // [0,0,0,1]
+rgba([.5,.5,.5]) // [.5,.5,.5,1]
+rgba([1,1,1]) // [1,1,1,1]
+rgba([127.5,127.5,127.5]) // [.5,.5,.5,1]
+rgba([255,255,255]) // [1,1,1,1]
 ```
 
 Output format can be any [dtype](https://npmjs.org/package/dtype): `uint8`, `uint8_clamped`, `array`, `float32`, `float64` etc. By default it converts to `array` with `0..1` range values.
